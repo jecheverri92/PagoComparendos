@@ -48,7 +48,7 @@ pipeline {
       steps{
         echo '------------>Análisis de código estático<------------'
 		sonarqubeMasQualityGatesP(sonarKey:'co.com.ceiba.adn:pago.comparendos.julian.echeverri', 
-        sonarName:'CeibaADN-PagoComparendos(julian.echeverri)', 
+        sonarName:'CeibaADN-PagoComparendos'+'(julian.echeverri)', 
         sonarPathProperties:'./sonar-project.properties')
       }
     }
