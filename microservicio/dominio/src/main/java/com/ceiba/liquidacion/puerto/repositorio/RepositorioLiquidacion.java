@@ -3,7 +3,7 @@ package com.ceiba.liquidacion.puerto.repositorio;
 import com.ceiba.comparendo.modelo.entidad.Comparendo;
 import com.ceiba.usuario.modelo.entidad.Usuario;
 
-public interface RepositorioComparendo {
+public interface RepositorioLiquidacion {
 
     /**
      * Permite crear un comparendo

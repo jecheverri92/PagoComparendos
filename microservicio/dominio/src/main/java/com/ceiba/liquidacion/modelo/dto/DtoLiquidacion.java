@@ -1,4 +1,4 @@
-package com.ceiba.comparendo.modelo.dto;
+package com.ceiba.liquidacion.modelo.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -7,7 +7,7 @@ import java.time.LocalDateTime;
 
 @Getter
 @AllArgsConstructor
-public class DtoComparendo {
+public class DtoLiquidacion {
     private Long id;
     private String numeroComparendo;
     private Integer tipoInfraccion;

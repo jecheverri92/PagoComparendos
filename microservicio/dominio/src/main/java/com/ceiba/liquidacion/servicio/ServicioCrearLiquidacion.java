@@ -4,13 +4,13 @@ import com.ceiba.comparendo.modelo.entidad.Comparendo;
 import com.ceiba.comparendo.puerto.repositorio.RepositorioComparendo;
 import com.ceiba.dominio.excepcion.ExcepcionDuplicidad;
 
-public class ServicioCrearComparendo {
+public class ServicioCrearLiquidacion {
 
     private static final String EL_COMPARENDO_YA_EXISTE_EN_EL_SITEMA = "El comparendo ya exite en el sistema";
 
     private final RepositorioComparendo repositorioComparendo;
 
-    public ServicioCrearComparendo(RepositorioComparendo repositorioComparendo) {
+    public ServicioCrearLiquidacion(RepositorioComparendo repositorioComparendo) {
         this.repositorioComparendo = repositorioComparendo;
     }
 
