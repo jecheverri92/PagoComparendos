@@ -46,9 +46,10 @@ pipeline {
     stage('Static Code Analysis') {
       steps{
         echo '------------>Análisis de código estático<------------'
-		withSonarQubeEnv('Sonar') {
-				sh "${tool name: 'SonarScanner', type:'hudson.plugins.sonar.SonarRunnerInstallation'}/bin/sonar-scanner"
-			}
+		sonarqubeMasQualityGates(sonarKey:'co.com.ceiba.adn:co.com.ceiba.adn:pago.comparendos.julian.echeverri', 
+        sonarName:'CeibaADN-PagoComparendos(julian.echeverri)', 
+        sonarPathProperties:'./sonar-project.properties')
+
 
       }
     }
