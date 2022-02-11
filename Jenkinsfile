@@ -42,6 +42,7 @@ pipeline {
 		sh './microservicio/gradlew --b ./microservicio/build.gradle clean'
 		sh './microservicio/gradlew --b ./microservicio/build.gradle test'
       }
+	}
 	  
     stage('Static Code Analysis') {
       steps{
@@ -49,8 +50,6 @@ pipeline {
 		sonarqubeMasQualityGatesP(sonarKey:'co.com.ceiba.adn:pago.comparendos.julian.echeverri', 
         sonarName:'CeibaADN-PagoComparendos(julian.echeverri)', 
         sonarPathProperties:'./sonar-project.properties')
-
-
       }
     }
 
