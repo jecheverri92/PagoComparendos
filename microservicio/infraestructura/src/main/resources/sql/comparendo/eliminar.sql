@@ -1,0 +1,1 @@
+DELETE FROM maestro_comparendo WHERE id_comparendo = :idComparendo

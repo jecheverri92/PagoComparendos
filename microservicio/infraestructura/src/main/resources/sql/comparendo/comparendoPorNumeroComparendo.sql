@@ -1,0 +1,1 @@
+SELECT * FROM maestro_comparendo WHERE numero_comparendo = :numeroComparendo

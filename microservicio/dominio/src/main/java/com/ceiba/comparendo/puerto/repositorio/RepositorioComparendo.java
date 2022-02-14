@@ -3,6 +3,8 @@ package com.ceiba.comparendo.puerto.repositorio;
 import com.ceiba.comparendo.modelo.entidad.Comparendo;
 import com.ceiba.usuario.modelo.entidad.Usuario;
 
+import java.time.LocalDateTime;
+
 public interface RepositorioComparendo {
 
     /**
@@ -16,7 +18,13 @@ public interface RepositorioComparendo {
      * Permite actualizar un comparendo
      * @param comparendo
      */
-    void actualizar(Usuario comparendo);
+    void actualizar(Comparendo comparendo);
+
+    /**
+     * Permite eliminar un comparendo
+     * @param comparendo
+     */
+    void eliminar(Comparendo comparendo);
 
 
     /**
@@ -30,4 +38,11 @@ public interface RepositorioComparendo {
      * @return si existe o no
      */
     boolean existePorId(Long id);
+
+    /**
+     * Permite retornar la fehca del comparendo
+     * @param numeroComparendo
+     * @return fecha del comparendo
+     */
+    Comparendo obtenerComparendoPorNumeroComparendo(String numeroComparendo);
 }

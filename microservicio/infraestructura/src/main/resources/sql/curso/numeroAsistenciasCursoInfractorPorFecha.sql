@@ -1,0 +1,1 @@
+SELECT COUNT(fecha_asistencia) FROM asistencia_curso WHERE identificacion_infractor = :identificacionInfractor AND fecha_asistencia = :fechaAsistencia

@@ -1,12 +1,17 @@
 package com.ceiba.comparendo.modelo.entidad;
 
 import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
+import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
 import static com.ceiba.dominio.ValidadorArgumento.validarObligatorio;
 
 @Getter
+@Setter
+@NoArgsConstructor
 public class Comparendo {
 
     private static final String MENSAJE_NUMERO_COMPARENDO_OBLIGATORIO = "El numero del comparendo es obligatorio";
@@ -19,9 +24,11 @@ public class Comparendo {
     private Integer tipoInfraccion;
     private String identificacionInfractor;
     private LocalDateTime fechaComparendo;
-    private String activo;
+    private BigDecimal valorComparendo;
+    private String pagado;
 
-    public Comparendo(Long id, String numeroComparendo, Integer tipoInfraccion, String identificacionInfractor, LocalDateTime fechaComparendo, String activo) {
+
+    public Comparendo(Long id, String numeroComparendo, Integer tipoInfraccion, String identificacionInfractor, LocalDateTime fechaComparendo, BigDecimal valorComparendo, String pagado) {
         validarObligatorio(numeroComparendo, MENSAJE_NUMERO_COMPARENDO_OBLIGATORIO);
         validarObligatorio(identificacionInfractor, MENSAJE_IDENTIFICACION_INFRACTOR_OBLIGATORIA);
         validarObligatorio(tipoInfraccion, MENSAJE_TIPO_INFRACCION_OBLIGATORIO);
@@ -32,6 +39,7 @@ public class Comparendo {
         this.tipoInfraccion = tipoInfraccion;
         this.identificacionInfractor = identificacionInfractor;
         this.fechaComparendo = fechaComparendo;
-        this.activo = activo;
+        this.valorComparendo = valorComparendo;
+        this.pagado = pagado;
     }
 }

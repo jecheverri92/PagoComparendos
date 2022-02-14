@@ -1,0 +1,1 @@
+insert into asistencia_curso(identificacion_infractor, numero_comparendo,fecha_asistencia) values (:identificacionInfractor,:numeroComparendo, :fechaAsistencia)

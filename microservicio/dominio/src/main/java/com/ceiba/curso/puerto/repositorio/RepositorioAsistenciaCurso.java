@@ -15,10 +15,10 @@ public interface RepositorioAsistenciaCurso {
 
     /**
      * Permite validar si existe un curso registrado con el id comparendo
-     * @param id
+     * @param numeroComparendo
      * @return si existe o no
      */
-    boolean existePorIdComparendo(Long id);
+    boolean existePorNumeroComparendo(String numeroComparendo);
 
     /**
      * Permite validar si el infractor ha asistido a cursos en la misma fehca
@@ -27,10 +27,5 @@ public interface RepositorioAsistenciaCurso {
      */
     Integer numeroAsistenciasPorFecha(AsistenciaCurso asistenciaCurso);
 
-    /**
-     * Permite retornar el numero de dias habiles que han pasado desde el comparendo
-     * @param asistenciaCurso
-     * @return el numero de dias habiles desde el comparendo
-     */
-    Integer diasHabilesDesdeFechaComparendo(AsistenciaCurso asistenciaCurso);
+
 }
