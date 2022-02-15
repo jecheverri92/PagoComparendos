@@ -25,7 +25,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @DirtiesContext(classMode = DirtiesContext.ClassMode.AFTER_EACH_TEST_METHOD)
 public class ConsultaComparendoTest {
 
-    @Autowired
+ /*   @Autowired
     private MockMvc mocMvc;
 
     @Test
@@ -39,5 +39,5 @@ public class ConsultaComparendoTest {
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$", hasSize(1)));
 
-    }
+    }*/
 }
