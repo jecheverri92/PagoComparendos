@@ -10,8 +10,6 @@ import java.time.LocalDateTime;
 import static com.ceiba.dominio.ValidadorArgumento.validarObligatorio;
 
 @Getter
-@Setter
-@NoArgsConstructor
 public class Comparendo {
 
     private static final String MENSAJE_NUMERO_COMPARENDO_OBLIGATORIO = "El numero del comparendo es obligatorio";
@@ -28,7 +26,7 @@ public class Comparendo {
     private String pagado;
 
 
-    public Comparendo(Long id, String numeroComparendo, Integer tipoInfraccion, String identificacionInfractor, LocalDateTime fechaComparendo, BigDecimal valorComparendo, String pagado) {
+    public Comparendo(Long id, String numeroComparendo, Integer tipoInfraccion, String identificacionInfractor, LocalDateTime fechaComparendo, BigDecimal valorComparendo) {
         validarObligatorio(numeroComparendo, MENSAJE_NUMERO_COMPARENDO_OBLIGATORIO);
         validarObligatorio(identificacionInfractor, MENSAJE_IDENTIFICACION_INFRACTOR_OBLIGATORIA);
         validarObligatorio(tipoInfraccion, MENSAJE_TIPO_INFRACCION_OBLIGATORIO);
@@ -40,6 +38,5 @@ public class Comparendo {
         this.identificacionInfractor = identificacionInfractor;
         this.fechaComparendo = fechaComparendo;
         this.valorComparendo = valorComparendo;
-        this.pagado = pagado;
     }
 }

@@ -18,8 +18,7 @@ public class FabricaComparendo {
                 comandoComparendo.getTipoInfraccion(),
                 comandoComparendo.getIdentificacionInfractor(),
                 comandoComparendo.getFechaComparendo(),
-                comandoComparendo.getValorComparendo(),
-                comandoComparendo.getPagado());
+                comandoComparendo.getValorComparendo());
     }
 
     public List<DtoPagoComparendo> pagarComparendo(List<ComandoPagarComparendo> comandoPagarComparendos){
