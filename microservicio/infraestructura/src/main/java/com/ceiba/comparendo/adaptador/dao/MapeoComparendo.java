@@ -15,11 +15,9 @@ public class MapeoComparendo implements RowMapper<DtoComparendo>, MapperResult {
         Long id = rs.getLong("id_comparendo");
         String numeroComparendo = rs.getString("numero_comparendo");
         Integer tipoInfraccion = rs.getInt("tipo_infraccion");
-        String nombreInfraccion = rs.getString("nombre_infraccion");
         String identificacionInfractor = rs.getString("identificacion_infractor");
         Date fechaComparendo = rs.getDate("fecha_comparendo");
         BigDecimal valorComparendo = rs.getBigDecimal("valor_comparendo");
-        String pagado = rs.getString("pagado");
-        return new DtoComparendo(id,numeroComparendo,tipoInfraccion,nombreInfraccion,identificacionInfractor,fechaComparendo,valorComparendo, pagado);
+        return new DtoComparendo(id,numeroComparendo,tipoInfraccion,identificacionInfractor,fechaComparendo,valorComparendo);
     }
 }

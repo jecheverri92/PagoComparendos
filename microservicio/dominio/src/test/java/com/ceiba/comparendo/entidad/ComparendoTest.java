@@ -15,7 +15,7 @@ public class ComparendoTest {
 
     @Test
     @DisplayName("Deberia crear el comparendo correctamente")
-    void deberiaCrearElComparendoCOrrectamente(){
+    void deberiaCrearElComparendoCorrectamente(){
         //arrange
         LocalDateTime fechaComparendo = LocalDateTime.now();
         // act

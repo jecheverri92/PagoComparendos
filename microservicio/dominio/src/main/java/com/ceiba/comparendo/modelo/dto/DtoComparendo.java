@@ -13,9 +13,7 @@ public class DtoComparendo {
     private Long id;
     private String numeroComparendo;
     private Integer tipoInfraccion;
-    private String nombreInfraccion;
     private String identificacionInfractor;
     private Date fechaComparendo;
     private BigDecimal valorComparendo;
-    private String pagado;
 }

@@ -3,6 +3,5 @@ insert into maestro_comparendo (
     tipo_infraccion,
     identificacion_infractor,
     fecha_comparendo,
-    valor_comparendo,
-    pagado)
-    values (:numeroComparendo, :tipoInfraccion, :identificacionInfractor,:fechaComparendo, :valorComparendo, :pagado)
+    valor_comparendo)
+    values (:numeroComparendo, :tipoInfraccion, :identificacionInfractor,:fechaComparendo, :valorComparendo)

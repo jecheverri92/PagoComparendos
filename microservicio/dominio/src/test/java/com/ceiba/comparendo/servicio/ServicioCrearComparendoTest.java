@@ -37,7 +37,7 @@ public class ServicioCrearComparendoTest {
 
 
     @Test
-    @DisplayName("Deberia Lanzar una axcepcion cunado el comparendo ya exista")
+    @DisplayName("Deberia Lanzar una excepcion cunado el comparendo ya exista")
     void deberiaLanzarUnaExepcionCuandoSeValideLaExistenciaDelComparendo(){
         //arrange
         Comparendo comparendo = ComparendoTestDataBuilder.unComparendo().build();
