@@ -84,9 +84,9 @@ public class ServicioRegistrarAsistenciaCurso {
 
     private void aplicarDescuento(Comparendo comparendo, Integer diasHabilesDesdeComparendo){
         if(diasHabilesDesdeComparendo<=NUMERO_DE_DIAS_HABILES_MEJOR_DESCUENTO){
-            comparendo.setValorComparendo(comparendo.getValorComparendo().multiply(new BigDecimal(0.5)));
+            comparendo.setValorComparendo(comparendo.getValorComparendo().multiply(BigDecimal.valueOf(0.5)));
         }else if(diasHabilesDesdeComparendo<=NUMERO_DE_DIAS_HABILES_DESCUENTO){
-            comparendo.setValorComparendo(comparendo.getValorComparendo().multiply(new BigDecimal(0.75)));
+            comparendo.setValorComparendo(comparendo.getValorComparendo().multiply(BigDecimal.valueOf(0.75)));
         }
     };
 
