@@ -24,7 +24,7 @@ public class ComparendoTest {
         assertEquals(1L, comparendo.getId());
         assertEquals("0001", comparendo.getNumeroComparendo());
         assertEquals(1, comparendo.getTipoInfraccion());
-        assertEquals("123456789", comparendo.getNumeroComparendo());
+        assertEquals("123456789", comparendo.getIdentificacionInfractor());
         assertEquals(fechaComparendo,comparendo.getFechaComparendo());
         assertEquals(null, comparendo.getValorComparendo());
     }

@@ -22,8 +22,8 @@ public class Comparendo {
     private Integer tipoInfraccion;
     private String identificacionInfractor;
     private LocalDateTime fechaComparendo;
+    @Setter
     private BigDecimal valorComparendo;
-    private String pagado;
 
 
     public Comparendo(Long id, String numeroComparendo, Integer tipoInfraccion, String identificacionInfractor, LocalDateTime fechaComparendo, BigDecimal valorComparendo) {
