@@ -148,7 +148,7 @@ public class ServicioCrearAsistenciaCurso {
         ServicioRegistrarAsistenciaCurso servicioRegistrarAsistenciaCurso = new ServicioRegistrarAsistenciaCurso(repositorioComparendo,repositorioAsistenciaCurso);
 
         //act- assert
-        BasePrueba.assertThrows(() -> servicioRegistrarAsistenciaCurso.ejecutar(asistenciaCurso), ExcepcionValorInvalido.class,"El infractor ya asistio al curso");
+        BasePrueba.assertThrows(() -> servicioRegistrarAsistenciaCurso.ejecutar(asistenciaCurso), ExcepcionDuplicidad.class,"El infractor ya asistio al curso");
     }
 
 }
