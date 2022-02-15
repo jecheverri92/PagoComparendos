@@ -33,7 +33,7 @@ public class ComparendoTest {
     @DisplayName("Deberia fallar la creacion sin numeroComparendo")
     void deberiaFallarSinNumeroComparendo(){
         //Arrange
-        ComparendoTestDataBuilder comparendoTestDataBuilder = new ComparendoTestDataBuilder().conNumeroComparendo(null).conId(1L);
+        ComparendoTestDataBuilder comparendoTestDataBuilder = ComparendoTestDataBuilder.unComparendo().conNumeroComparendo(null).conId(1L);
         //act-assert
         BasePrueba.assertThrows(()-> {
             comparendoTestDataBuilder.build();
@@ -44,7 +44,7 @@ public class ComparendoTest {
     @DisplayName("Deberia falalr la creacion sin tipoInfraccion")
     void deberiaFallarSinTipoInfraccion(){
         //Arrange
-        ComparendoTestDataBuilder comparendoTestDataBuilder = new ComparendoTestDataBuilder().conTipoInfraccion(null).conId(1L);
+        ComparendoTestDataBuilder comparendoTestDataBuilder = ComparendoTestDataBuilder.unComparendo().conTipoInfraccion(null).conId(1L);
         //act-assert
         BasePrueba.assertThrows(()-> {
             comparendoTestDataBuilder.build();
@@ -52,10 +52,10 @@ public class ComparendoTest {
     }
 
     @Test
-    @DisplayName("Deberia falalr la creacion sin tipoInfraccion")
+    @DisplayName("Deberia falalr la creacion sin identificacionInfractor")
     void deberiaFallarSinIdentificacionInfractor(){
         //Arrange
-        ComparendoTestDataBuilder comparendoTestDataBuilder = new ComparendoTestDataBuilder().conIdentificacionInfractor(null).conId(1L);
+        ComparendoTestDataBuilder comparendoTestDataBuilder = ComparendoTestDataBuilder.unComparendo().conIdentificacionInfractor(null).conId(1L);
         //act-assert
         BasePrueba.assertThrows(()-> {
             comparendoTestDataBuilder.build();
@@ -63,10 +63,10 @@ public class ComparendoTest {
     }
 
     @Test
-    @DisplayName("Deberia falalr la creacion sin tipoInfraccion")
+    @DisplayName("Deberia falalr la creacion sin fechaComparendo")
     void deberiaFallarSinFechaComparendo(){
         //Arrange
-        ComparendoTestDataBuilder comparendoTestDataBuilder = new ComparendoTestDataBuilder().conFechaComparendo(null).conId(1L);
+        ComparendoTestDataBuilder comparendoTestDataBuilder = ComparendoTestDataBuilder.unComparendo().conFechaComparendo(null).conId(1L);
         //act-assert
         BasePrueba.assertThrows(()-> {
             comparendoTestDataBuilder.build();

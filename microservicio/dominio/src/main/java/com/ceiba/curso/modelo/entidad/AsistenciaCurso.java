@@ -17,7 +17,6 @@ public class AsistenciaCurso {
     private Long id;
     private String numeroComparendo;
     private String identificacionInfractor;
-
     private LocalDateTime fechaAsistencia;
 
     public AsistenciaCurso(Long id, String numeroComparendo, String identificacionInfractor, LocalDateTime fechaAsistencia) {
