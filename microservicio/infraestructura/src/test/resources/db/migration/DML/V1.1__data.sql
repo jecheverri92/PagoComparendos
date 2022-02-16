@@ -27,9 +27,9 @@ values(3,3,3);
 --Comparendos con el mismo idInfractor
 insert into maestro_comparendo(
 id,numero_comparendo,tipo_infraccion,identificacion_infractor,fecha_comparendo,valor_comparendo)
-values(1,'0001',1,'123456789','1986-04-08', 1000);
+values(1,'0001',1,'123456789','2020-01-01', 1000);
 insert into maestro_comparendo(
 id,numero_comparendo,tipo_infraccion,identificacion_infractor,fecha_comparendo,valor_comparendo)
-values(2,'0002',1,'123456789','1986-04-08', 1000);
+values(2,'0002',1,'123456789','2020-01-01', 1000);
 
 

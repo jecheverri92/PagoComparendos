@@ -1,3 +1,3 @@
 update maestro_comparendo
-set valor_comparendo = :valorComparendo,
+set valor_comparendo = :valorComparendo
 where numero_comparendo = :numeroComparendo
