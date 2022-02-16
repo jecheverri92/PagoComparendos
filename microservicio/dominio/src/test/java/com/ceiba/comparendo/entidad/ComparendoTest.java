@@ -19,7 +19,7 @@ public class ComparendoTest {
         //arrange
         LocalDateTime fechaComparendo = LocalDateTime.now();
         // act
-        Comparendo comparendo = new ComparendoTestDataBuilder().conFechaComparendo(fechaComparendo).conId(1L).build();
+        Comparendo comparendo = ComparendoTestDataBuilder.unComparendo().conFechaComparendo(fechaComparendo).conId(1L).build();
         //assert
         assertEquals(1L, comparendo.getId());
         assertEquals("0001", comparendo.getNumeroComparendo());

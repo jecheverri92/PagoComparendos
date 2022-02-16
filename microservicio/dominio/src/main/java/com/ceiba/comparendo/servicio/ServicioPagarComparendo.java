@@ -14,7 +14,6 @@ import java.util.List;
 public class ServicioPagarComparendo {
 
     private static final String EL_COMPARENDO_NO_EXISTE_EN_EL_SITEMA = "El comparendo no existe en el sistema";
-    private static final String EL_COMPARENDO_YA_SE_ENCUENTRA_PAGADO = "El comparendo ya ha sido pagado";
     private static final String EL_VALOR_DEL_COMPARENDO_NO_ES_VALIDO = "El valor del comparendo no es valido";
 
     private final RepositorioComparendo repositorioComparendo;

@@ -1,9 +1,6 @@
 package com.ceiba.comparendo.puerto.repositorio;
 
 import com.ceiba.comparendo.modelo.entidad.Comparendo;
-import com.ceiba.usuario.modelo.entidad.Usuario;
-
-import java.time.LocalDateTime;
 
 public interface RepositorioComparendo {
 

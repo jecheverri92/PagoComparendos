@@ -2,7 +2,6 @@ package com.ceiba.curso.puerto.repositorio;
 
 import com.ceiba.curso.modelo.entidad.AsistenciaCurso;
 
-import java.time.LocalDateTime;
 
 public interface RepositorioAsistenciaCurso {
 

@@ -88,7 +88,7 @@ public class ServicioRegistrarAsistenciaCurso {
         }else if(diasHabilesDesdeComparendo<=NUMERO_DE_DIAS_HABILES_DESCUENTO){
             comparendo.setValorComparendo(comparendo.getValorComparendo().multiply(BigDecimal.valueOf(0.75)));
         }
-    };
+    }
 
 
 
