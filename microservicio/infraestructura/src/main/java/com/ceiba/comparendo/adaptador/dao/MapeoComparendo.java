@@ -12,7 +12,7 @@ import java.util.Date;
 public class MapeoComparendo implements RowMapper<DtoComparendo>, MapperResult {
     @Override
     public DtoComparendo mapRow(ResultSet rs, int rowNum) throws SQLException {
-        Long id = rs.getLong("id_comparendo");
+        Long id = rs.getLong("id");
         String numeroComparendo = rs.getString("numero_comparendo");
         Integer tipoInfraccion = rs.getInt("tipo_infraccion");
         String identificacionInfractor = rs.getString("identificacion_infractor");
