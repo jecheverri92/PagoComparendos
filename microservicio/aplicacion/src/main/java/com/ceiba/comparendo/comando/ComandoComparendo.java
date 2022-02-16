@@ -20,5 +20,4 @@ public class ComandoComparendo {
     private String identificacionInfractor;
     private LocalDateTime fechaComparendo;
     private BigDecimal valorComparendo;
-    private String pagado;
 }

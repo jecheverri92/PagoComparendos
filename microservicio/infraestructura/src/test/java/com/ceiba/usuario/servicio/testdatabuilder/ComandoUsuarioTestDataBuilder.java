@@ -1,5 +1,6 @@
 package com.ceiba.usuario.servicio.testdatabuilder;
 
+import com.ceiba.comparendo.servicio.testdatabuilder.ComandoComparendoTestDataBuilder;
 import com.ceiba.usuario.comando.ComandoUsuario;
 
 import java.time.LocalDateTime;
@@ -26,4 +27,5 @@ public class ComandoUsuarioTestDataBuilder {
     public ComandoUsuario build() {
         return new ComandoUsuario(id,nombre, clave,fecha);
     }
+
 }

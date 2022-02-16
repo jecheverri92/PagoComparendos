@@ -23,21 +23,22 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @WebMvcTest(ConsultaControladorUsuario.class)
 @ContextConfiguration(classes= ApplicationMock.class)
 @DirtiesContext(classMode = DirtiesContext.ClassMode.AFTER_EACH_TEST_METHOD)
-public class ConsultaComparendoTest {
+public class ConsultaControladorComparendoTest {
 
- /*   @Autowired
+    @Autowired
     private MockMvc mocMvc;
 
     @Test
     @DisplayName("Deberia listar los comparendos por infractor")
     void deberiaListarComparendosPorInfractor() throws Exception {
         // arrange
-        String identificacionInfractor = "1152443132";
+        String identificacionInfractor = "123456789";
         // act - assert
         mocMvc.perform(get("/comparendos/idInfractor/{identificacionInfractor}",identificacionInfractor)
                         .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
-                .andExpect(jsonPath("$", hasSize(1)));
-
-    }*/
+                .andExpect(jsonPath("$", hasSize(2)))
+                .andExpect(jsonPath("$[0].identificacionInfractor", is(identificacionInfractor)))
+                .andExpect(jsonPath("$[1].identificacionInfractor", is(identificacionInfractor)));
+    }
 }
